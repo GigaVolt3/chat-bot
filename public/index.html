@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialogflow Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dialogflow Chatbot</h1>
+            <div id="connection-status" class="status">
+                <span class="status-indicator" id="status-indicator"></span>
+                <span id="status-text">Connecting to Dialogflow...</span>
+            </div>
+        </header>
+        
+        <div class="chat-container">
+            <div id="chat-messages" class="chat-messages">
+                <div class="message bot">
+                    <div class="message-content">
+                        Hello! I'm your Dialogflow assistant. How can I help you today?
+                    </div>
+                </div>
+            </div>
+            
+            <div class="input-area">
+                <input 
+                    type="text" 
+                    id="user-input" 
+                    placeholder="Type your message here..." 
+                    autocomplete="off"
+                >
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

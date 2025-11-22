@@ -1,0 +1,114 @@
+{
+  "greeting_bot_status": {
+    "purpose": "handle greetings",
+    "scope": "general greetings",
+    "keywords": [
+      "hello",
+      "hi",
+      "hey"
+    ],
+    "should_match": [
+      "hello",
+      "hi",
+      "hey"
+    ],
+    "should_not_match": [
+      "goodbye",
+      "see you later"
+    ],
+    "created_at": "2025-11-22T21:46:28.679Z"
+  },
+  "knowledge_bot_capabilities": {
+    "purpose": "handle user's question about bot's capabilities",
+    "scope": "general knowledge",
+    "keywords": [
+      "capabilities",
+      "help",
+      "information"
+    ],
+    "should_match": [
+      "what can you do",
+      "what are your capabilities"
+    ],
+    "should_not_match": [
+      "greeting",
+      "farewell"
+    ],
+    "created_at": "2025-11-22T21:46:49.305Z"
+  },
+  "knowledge_bot_memory": {
+    "purpose": "handle user's question about bot's memory capabilities",
+    "scope": "general knowledge",
+    "keywords": [
+      "memory",
+      "recall",
+      "remember"
+    ],
+    "should_match": [
+      "can you remember me",
+      "do you have a memory"
+    ],
+    "should_not_match": [
+      "hello",
+      "hi"
+    ],
+    "created_at": "2025-11-22T21:47:48.755Z",
+    "updated_at": "2025-11-22T21:48:35.175Z"
+  },
+  "game_tic_tac_toe": {
+    "purpose": "handle user's request to play a game of Tic-Tac-Toe",
+    "scope": "create a game board and play with the user",
+    "keywords": [
+      "tic tac toe",
+      "game board",
+      "play"
+    ],
+    "should_match": [
+      "lets play xo",
+      "create a game board"
+    ],
+    "should_not_match": [
+      "greeting",
+      "knowledge"
+    ],
+    "created_at": "2025-11-22T21:50:51.432Z"
+  },
+  "storytelling_general": {
+    "purpose": "handle user's request for a story",
+    "scope": "general storytelling",
+    "keywords": [
+      "story",
+      "tale",
+      "narrative"
+    ],
+    "should_match": [
+      "tell me a story",
+      "share a story",
+      "story time"
+    ],
+    "should_not_match": [
+      "what's the weather",
+      "how are you"
+    ],
+    "created_at": "2025-11-22T21:59:07.797Z"
+  },
+  "feedback_story": {
+    "purpose": "handle user's feedback about a story",
+    "scope": "reaction to a story",
+    "keywords": [
+      "boring",
+      "not interesting",
+      "too long"
+    ],
+    "should_match": [
+      "boring",
+      "not interesting",
+      "too long"
+    ],
+    "should_not_match": [
+      "tell me a story",
+      "share a story"
+    ],
+    "created_at": "2025-11-22T21:59:39.312Z"
+  }
+}
